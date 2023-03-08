@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+{% block title %}Article adding form{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>Article delete form</h1>
+        <form method="post" >
+            {% csrf_token %}
+            <button class = "btn btn-warning" type="submit">Delete article</button>
+        </form>
+    </div>
+{% endblock %}
